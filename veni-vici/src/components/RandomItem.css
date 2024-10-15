@@ -3,7 +3,7 @@
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
+  max-width: 600px;
   width: 100%; /* Allow the card to be 100% of its container's width */
   margin: 0 auto 2rem auto; /* Ensure it's centered */
   overflow: hidden; /* Prevent content overflow */

@@ -6,11 +6,18 @@ const RandomItem = () => {
   const [banList, setBanList] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  const apiKey = import.meta.env.VITE_API_KEY; // Access the API key from .env
+
   const fetchRandomItem = async () => {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://api.thedogapi.com/v1/images/search"
+        "https://api.thedogapi.com/v1/images/search",
+        {
+          headers: {
+            "x-api-key": apiKey, // Add the API key in the headers
+          },
+        }
       );
       const data = await response.json();
       // Check if the item is in the ban list
@@ -51,7 +58,7 @@ const RandomItem = () => {
       ) : (
         <p>No items to show</p>
       )}
-      <div>
+      <div className="ban-list">
         <h3>Ban List:</h3>
         <ul>
           {banList.map((item, index) => (

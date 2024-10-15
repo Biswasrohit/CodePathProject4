@@ -1,15 +1,15 @@
+/* Random item container */
 .random-item {
   background-color: white;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  width: 100%; /* Allow the card to be 100% of its container's width */
-  margin: 0 auto 2rem auto; /* Ensure it's centered */
-  overflow: hidden; /* Prevent content overflow */
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-/* Ensure the image is responsive */
+/* Image styling */
 .random-item img {
   max-width: 100%;
   height: auto;
@@ -20,22 +20,28 @@
 /* Attribute text styling */
 .random-item p {
   font-size: 1.2rem;
-  color: #333 !important; /* Changed from white to a dark color for contrast */
+  color: #333;
+  margin: 0.5rem 0;
 }
 
 /* Ban list container */
 .ban-list {
   margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .ban-list h3 {
   font-size: 1.5rem;
-  color: #444 !important;
+  color: #444;
 }
 
 .ban-list ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .ban-list li {
@@ -57,6 +63,7 @@ button {
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
+  margin: 0.5rem 0;
 }
 
 button:hover {
@@ -66,4 +73,46 @@ button:hover {
 button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+/* History container */
+.history {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+.history h3 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.history li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+}
+
+.history li img {
+  max-width: 60px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 10px;
 }

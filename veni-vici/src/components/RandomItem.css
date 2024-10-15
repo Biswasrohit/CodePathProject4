@@ -1,0 +1,69 @@
+/* Random item container */
+.random-item {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/* Image styling */
+.random-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Attribute text */
+.random-item p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Ban list container */
+.ban-list {
+  margin-top: 2rem;
+}
+
+.ban-list h3 {
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.ban-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ban-list li {
+  background-color: #f1f1f1;
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Button styling */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
